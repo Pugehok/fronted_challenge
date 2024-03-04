@@ -19,15 +19,15 @@ interface IProps{
 
 export const NavMenu = (props:IProps) => {
   return (
-    <div>
+    <div className='flex flex-col px-4 py-2 bg-boneless drop-shadow-md'>
         {props.MenuList.map((element)=>
         <>
           {element.icon? <>
            <element.icon/> 
-            <span className='text-lightgray hover:text-black'>{element.text}</span>
+            <span className='cursor-pointer text-lightgray hover:text-black'>{element.text}</span>
            </>:
            <>
-             <span className='text-lightgray hover:text-black'>{element.text}</span>
+             <span className='cursor-pointer text-lightgray hover:text-black'>{element.text}</span>
            </>
             }
             

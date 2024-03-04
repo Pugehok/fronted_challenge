@@ -17,8 +17,9 @@ export const Header = ()=>{
                 <NavItem text='Company' isDropdown={true}>
                     <NavMenu MenuList={COMPANY} />
                 </NavItem>
-                <NavItem text='Careers' />
-                <NavItem text='About' />
+                <NavItem text='Careers'  isDropdown={false}>
+                </NavItem>
+                <NavItem text='About'> </NavItem>
             </nav>
         </header>
     )
