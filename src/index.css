@@ -1,0 +1,28 @@
+/* Наследуем tailwind стили для возможности использования их в приложении, ВАЖНО прокинуть index.css в корень приложения */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Подключение шрифтов*/
+@font-face{
+  font-family: 'Epilogue';
+  src: local('Epilouge'),url('./fonts/Epilogue-Regular.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Epilogue';
+}
+
+svg{
+  display: flex;
+  align-items: center;
+}
