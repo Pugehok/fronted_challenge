@@ -1,13 +1,17 @@
 import react, { useState } from 'react'
-import { LogoIcon } from '../../Icons/Logo'
+
+import { LogoIcon, Burger, CloseBurger } from '../../Icons'
 import { NavItem } from '../nav-item'
-import { ArrowDown } from '../../Icons/ArrowDown'
 import { NavMenu } from '../nav-menu'
 import { COMPANY, FEATURES } from '../../constants/constants'
 import { Button } from '../button'
+import { MobileMenu } from '../mobile-menu'
+
+
 
 export const Header = ()=>{
-   
+   const [isMobileMenu, setMobileMenu] = useState(false) 
+
     return(
         <header className='flex items-center'>
             <LogoIcon/>
@@ -26,6 +30,10 @@ export const Header = ()=>{
                 <Button>Login</Button>
                 <Button hasBorder={true}>Register</Button>
             </div>
+            <div onClick={()=> setMobileMenu(!isMobileMenu)} className='ml-auto xl:hidden cursor-pointer z-30'>
+               {isMobileMenu? <CloseBurger /> : <Burger/>} 
+            </div>
+               <MobileMenu isOpen={isMobileMenu}/>
         </header>
     )
 }

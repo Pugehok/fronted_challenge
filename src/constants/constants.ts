@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Todo } from "../Icons";
+import { Calendar, Todo } from "../Icons";
 import { ReactElement } from "react";
 
 interface IDropItem{
@@ -13,9 +13,9 @@ interface IDropItem{
 
 export const FEATURES: Array <IDropItem>  = [
     { text: 'Todo List', icon: Todo},
-    { text: 'Todo List', icon: Todo},
-    { text: 'Todo List', icon: Todo},
-    { text: 'Todo List', icon: Todo},
+    { text: 'Calendar', icon: Calendar},
+    { text: 'Reminders', icon: Todo},
+    { text: 'Planning', icon: Calendar},
 ];
 
 export const COMPANY = [
