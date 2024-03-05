@@ -11,7 +11,7 @@ export const Header = ()=>{
     return(
         <header className='flex items-center'>
             <LogoIcon/>
-            <nav className='flex space-x-6 ml-8 '>
+            <nav className='hidden xl:flex space-x-6 ml-8 '>
                 <NavItem text='Feature' isDropdown={true}>
                    <NavMenu MenuList={FEATURES} />
                 </NavItem>
@@ -22,7 +22,7 @@ export const Header = ()=>{
                 </NavItem>
                 <NavItem text='About'> </NavItem>
             </nav>
-            <div className='ml-auto flex space-x-5'>
+            <div className='hidden ml-auto xl:flex space-x-5'>
                 <Button>Login</Button>
                 <Button hasBorder={true}>Register</Button>
             </div>
