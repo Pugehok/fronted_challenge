@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Todo } from "../../Icons";
+import { Todo } from "../Icons";
 import { ReactElement } from "react";
 
 interface IDropItem{

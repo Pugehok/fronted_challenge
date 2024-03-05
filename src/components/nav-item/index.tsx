@@ -15,7 +15,7 @@ export const NavItem = (props:IProps) =>{
 
 
     return(
-        <div className="relative">
+        <div className="relative ml-4">
             <div onClick={toggleDroppable} className="flex space-2 cursor-pointer items-center space-x-2">
                 <span className="text-lightgray hover:text-black">{props.text}</span>
                 {!selected && props.isDropdown?  <ArrowDown/>:<></>}

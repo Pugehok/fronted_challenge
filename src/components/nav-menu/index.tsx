@@ -1,5 +1,6 @@
 
 import React, { ReactElement, ReactNode } from 'react'
+import { MenuItem } from '../menu-item'
 // export const FEATURES = [
 //     { text: 'Todo List', icon: <Todo /> },
 //     { text: 'Calendar', icon: <Calendar /> },
@@ -19,21 +20,8 @@ interface IProps{
 
 export const NavMenu = (props:IProps) => {
   return (
-    <div className='flex flex-col px-4 py-2 bg-boneless drop-shadow-md'>
-        {props.MenuList.map((element)=>
-        <>
-          {element.icon? <>
-           <element.icon/> 
-            <span className='cursor-pointer text-lightgray hover:text-black'>{element.text}</span>
-           </>:
-           <>
-             <span className='cursor-pointer text-lightgray hover:text-black'>{element.text}</span>
-           </>
-            }
-            
-        </>
-         
-        )}
+    <div className='flex flex-col px-4 py-2 bg-boneless drop-shadow rounded-lg absolute top-10 right-0 w-36 space-y-2 z-30'>
+        {props.MenuList.map((element)=> <MenuItem text={element.text} icon={element.icon}/> )}
     </div>
   )
 }
