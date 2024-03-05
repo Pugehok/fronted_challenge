@@ -1,4 +1,3 @@
-import React from 'react'
 import { IconPhile, Maker } from '../../Icons'
 import MenImage from '../../assets/image/image-hero-desktop.png'
 import MobileMenImage from '../../assets/image/image-hero-mobile.png'

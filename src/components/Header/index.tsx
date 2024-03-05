@@ -1,4 +1,4 @@
-import react, { useState } from 'react'
+import  { useState } from 'react'
 
 import { LogoIcon, Burger, CloseBurger } from '../../Icons'
 import { NavItem } from '../nav-item'

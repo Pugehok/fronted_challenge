@@ -1,5 +1,5 @@
 
-import React, { ReactElement, ReactNode } from 'react'
+import { ReactElement } from 'react'
 import { MenuItem } from '../menu-item'
 // export const FEATURES = [
 //     { text: 'Todo List', icon: <Todo /> },
@@ -10,11 +10,11 @@ import { MenuItem } from '../menu-item'
 
 interface Menu {
     text: string
-    icon?: ()=> ReactElement
+    icon?: ()=>  ReactElement
 }
 
 interface IProps{
-    MenuList: [Menu]
+    MenuList: Array<Menu>
 }
 
 

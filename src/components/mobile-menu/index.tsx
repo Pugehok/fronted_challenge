@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavItem } from '../nav-item'
 import { COMPANY, FEATURES } from '../../constants/constants'
 import { MenuItem } from '../menu-item'

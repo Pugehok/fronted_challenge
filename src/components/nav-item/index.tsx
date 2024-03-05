@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowUp } from "../../Icons"
-import { Children, ReactNode, useEffect, useState } from "react"
+import { ReactNode, useState } from "react"
 
 interface IProps{
     text?: string
