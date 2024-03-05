@@ -2,7 +2,7 @@ import { ArrowDown, ArrowUp } from "../../Icons"
 import { Children, ReactNode, useEffect, useState } from "react"
 
 interface IProps{
-    text: string
+    text?: string
     children? : ReactNode
     isDropdown?: boolean
 }
