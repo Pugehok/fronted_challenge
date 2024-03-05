@@ -15,4 +15,4 @@
 
 
   ## Ознакомится с этим сайтом вы можете по ссылке ниже
-   -Тык[a link](https://fronted-challenge.vercel.app/)
+   --[Тык link](https://fronted-challenge.vercel.app/)
