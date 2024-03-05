@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# React + Tailwind + TypeScript + Vite  
+- Для запуска проекта перейдите в директорию проекта
+- Используйте команду yarn для установки всех нужных зависимостей
+- После успешной установки используйте команду yarn dev для запуска проекта на локальной машине.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+- ## Чему я научился в прцоессе выполнения этого челленджа?
+-  Ознакомился с CLI Taliwind (init)
+-  Научился создавать свои свойста в taliwind.config.js
+-  Познакомился с созданием адаптивных/отзывчивых интерфейсов с помощью Tailwind
+-  Так - же поработал с reusable componnents
+-  Научился типизировать ReactNode которые приходят в качестве пропсов.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  ## Ознакомится с этим сайтом вы можете по ссылке ниже
+   -Тык[a link](https://fronted-challenge.vercel.app/)
