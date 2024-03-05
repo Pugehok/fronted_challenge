@@ -1,5 +1,6 @@
 
-import React, { ReactElement, ReactNode } from 'react'
+import { ReactElement } from 'react'
+import { MenuItem } from '../menu-item'
 // export const FEATURES = [
 //     { text: 'Todo List', icon: <Todo /> },
 //     { text: 'Calendar', icon: <Calendar /> },
@@ -9,31 +10,18 @@ import React, { ReactElement, ReactNode } from 'react'
 
 interface Menu {
     text: string
-    icon?: ()=> ReactElement
+    icon?: ()=>  ReactElement
 }
 
 interface IProps{
-    MenuList: [Menu]
+    MenuList: Array<Menu>
 }
 
 
 export const NavMenu = (props:IProps) => {
   return (
-    <div>
-        {props.MenuList.map((element)=>
-        <>
-          {element.icon? <>
-           <element.icon/> 
-            <span className='text-lightgray hover:text-black'>{element.text}</span>
-           </>:
-           <>
-             <span className='text-lightgray hover:text-black'>{element.text}</span>
-           </>
-            }
-            
-        </>
-         
-        )}
+    <div className='flex flex-col px-4 py-2 bg-boneless drop-shadow rounded-lg absolute top-10 right-0 w-36 space-y-2 z-30'>
+        {props.MenuList.map((element)=> <MenuItem text={element.text} icon={element.icon}/> )}
     </div>
   )
 }
